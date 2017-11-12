@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<Devices>
+	<Device type="custom" id="alarmKeypad">
+		<Name>Alarm Keypad</Name>
+		<ConfigUI>
+			<Field id="instructionLabel" type="label">
+				<Label>Link this security keypad to a Total Connect location.</Label>
+			</Field>
+			<Field id="locationName" type="menu">
+				<Label>Location:</Label>
+				<List class="self" method="getLocations"/>
+			</Field>
+		</ConfigUI>
+		
+		<UiDisplayStateId>state</UiDisplayStateId>
+		<States>
+			<State id="state" readonly="Yes">
+				<ValueType>
+					<List>
+						<Option value="Disarmed">Disarmed</Option>
+						<Option value="Armed-Away">Armed-Away</Option>
+						<Option value="Armed-Stay">Armed-Stay</Option>						
+						<Option value="Armed-Night">Armed-Night</Option>						
+						<Option value="Arming">Arming</Option>						
+						<Option value="Disarming">Disarming</Option>						
+					</List>
+				</ValueType>
+				<TriggerLabel>Security Panel State Changed</TriggerLabel>
+				<TriggerLabelPrefix>Security Panel State Changed to</TriggerLabelPrefix>
+				<ControlPageLabel>Current Security Panel State</ControlPageLabel>
+				<ControlPageLabelPrefix>Security Panel is</ControlPageLabelPrefix>
+			</State>
+			<State id="isBypass" readonly="Yes">
+				<ValueType boolType="OnOff">Boolean</ValueType>
+				<TriggerLabel>Bypass Changed</TriggerLabel>
+				<TriggerLabelPrefix>Bypass Changed to</TriggerLabelPrefix>
+				<ControlPageLabel>Zone Bypass</ControlPageLabel>
+				<ControlPageLabelPrefix>Zone Bypass is</ControlPageLabelPrefix>
+			</State>
+			<State id="isArmed" readonly="Yes">
+				<ValueType boolType="TrueFalse">Boolean</ValueType>
+				<TriggerLabel>Armed Status Changed</TriggerLabel>
+				<TriggerLabelPrefix>Armed Status Changed to</TriggerLabelPrefix>
+				<ControlPageLabel>Current Armed Status</ControlPageLabel>
+				<ControlPageLabelPrefix>Armed Status is</ControlPageLabelPrefix>
+			</State>
+			<State id="lastStatusUpdate" readonly="Yes">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Last Status Update Changed</TriggerLabel>
+				<TriggerLabelPrefix>Last Status Update Changed To</TriggerLabelPrefix>
+				<ControlPageLabel>Last Status Update</ControlPageLabel>
+				<ControlPageLabelPrefix>Status Last Updated at</ControlPageLabelPrefix>
+			</State>
+		</States>
+	</Device>
+</Devices>

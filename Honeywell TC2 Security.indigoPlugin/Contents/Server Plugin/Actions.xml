@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Actions>
+	<Action id="actionDisarm" deviceFilter="self.alarmKeypad">
+		<Name>Disarm Alarm</Name>
+		<CallbackMethod>disarm</CallbackMethod>
+	</Action>
+	
+	<Action id="actionArmStay" deviceFilter="self.alarmKeypad">
+		<Name>Arm Alarm in Stay Mode</Name>
+		<CallbackMethod>armStay</CallbackMethod>
+	</Action>
+	
+	<Action id="actionArmAway" deviceFilter="self.alarmKeypad">
+		<Name>Arm Alarm in Away Mode</Name>
+		<CallbackMethod>armAway</CallbackMethod>
+	</Action>
+	
+	<Action id="actionArmNight" deviceFilter="self.alarmKeypad">
+		<Name>Arm Alarm in Night Stay Mode</Name>
+		<CallbackMethod>armStayNight</CallbackMethod>
+	</Action>
+
+	<Action id="updateStatus" deviceFilter="self.alarmKeypad">
+		<Name>Update Status</Name>
+		<CallbackMethod>updateStatus</CallbackMethod>
+	</Action>
+	
+</Actions>
+
+
