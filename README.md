@@ -48,7 +48,7 @@ Installation and Set-Up
 2. Double-click on the **Honeywell TC2 Security.indigoPlugin** file, Indigo should launch and ask if you'd like it to install the plugin.
 3. The plugin's config screen should pop up. 
 
-![Configure Honeywell TC2 Security dialog box. Type a Web access user name and a Web access password at the prompts.](images/Config.png)
+![Configure Honeywell TC2 Security dialog box. Type a Web access user name and a Web access password at the prompts.](https://github.com/GregSS-Dev/honeywell-tc2-indigoplugin/blob/master/images/Config.png)
 
 4. Type your Total Connect user name in **Web access user name.** It is recommended that you create a new Standard user for Indigo's exclusive use. This user must have access to your panel, with a user code assigned and synchronized. See instructions [here](https://totalconnect.helpshift.com/a/total-connect-2-0/?l=en&s=users-and-security-codes&f=how-do-i-add-set-up-and-delete-users-user-management&p=all).
 5. Type your Total Connect password in **Web access password.**
@@ -58,11 +58,11 @@ Installation and Set-Up
 
 1. Create one Alarm Keypad device. This device tracks the arming status of your physical security panel. It's also the device you use to arm/disarm the alarm.
 
-![Indigo's Create New Device dialog box. Type = Honeywell TC2 Security, Model = Alarm Keypad click Settings.](images/NewAlarmKeypad.png)
+![Indigo's Create New Device dialog box. Type = Honeywell TC2 Security, Model = Alarm Keypad click Settings.](https://github.com/GregSS-Dev/honeywell-tc2-indigoplugin/blob/master/images/NewAlarmKeypad.png)
 
 2. Configure the keypad by selecting the Total Connect location corresponding to your primary security panel.
 
-![Configure Alarm Keypad dialog. Choose a Location.](images/ConfigureAlarmKeypad.png)
+![Configure Alarm Keypad dialog. Choose a Location.](https://github.com/GregSS-Dev/honeywell-tc2-indigoplugin/blob/master/images/ConfigureAlarmKeypad.png)
 
 Usage
 =====
